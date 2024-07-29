@@ -4065,12 +4065,16 @@ Method */
 	}
 
 	.text-box h2{
-		font-weight: 600;
+		font-weight: 800;
+		margin-bottom: 0%;
+		font-size: 20px;
 	}
 
 	.text-box small{
 		display: inline-block;
-		margin-bottom: 15px;
+		margin-bottom: 1px;
+		margin-top: 0;
+		font-weight: 600;
 	}
 
 	.left-container-arrow{
