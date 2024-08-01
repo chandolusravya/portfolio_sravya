@@ -4505,3 +4505,7 @@ Method */
 		border-radius:60% 40% 40% 60% / 60% 40% 60% 40% ;
 	}
 }
+.icon-large {
+    font-size: 1.5em; /* Adjust the size as needed */
+	margin-top: 6px;
+}
