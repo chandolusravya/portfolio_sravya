@@ -1781,11 +1781,13 @@ input, select, textarea {
 		align-items: flex-start; /* Align items to the start (left) */
 		padding-left: 0; /* Ensure there is no left padding */
 		margin-left: 0; /* Ensure there is no left margin */
-		margin-top: 5%;
+		margin-top: 7%;
+		
 	}
 
 		header.major > :first-child {
-			margin-bottom: 0;
+			
+			margin-top: 5%;
 			width: calc(100% + 0.5em);
 			
 		}
@@ -3301,6 +3303,7 @@ Method */
 
 			#header nav a[href="#menu"] {
 				padding-right: 3.75em !important;
+				
 			}
 
 				#header nav a[href="#menu"]:last-child {
@@ -3338,6 +3341,7 @@ Method */
 
 					#header nav a:last-child {
 						padding-right: 1em;
+						padding-left: 1em;
 					}
 
 					#header nav a[href="#menu"] {
@@ -4517,9 +4521,12 @@ Method */
 }
 
 .flex-container .content p {
-    margin-top: 5%;
-	
+  margin-inline-start: 0%;
+	margin: 1.5%;
+	color:#bbb;
 	font-style: normal;
+	text-align: justify;
+	font-weight: 100;
 }
 
 .flex-container .actions {
@@ -4547,6 +4554,44 @@ Method */
 	display: flex;
 	flex-direction: column;
 }
+
+@media (max-width: 896px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content within the container */
+        text-align: center; /* Center the text content */
+    }
+
+    .flex-container img {
+        max-width: 100%; /* Ensure the image scales with the container */
+        height: 40%;
+        margin-bottom: 10px;
+    }
+
+    .flex-container .content {
+        width: 100%; /* Make sure the content takes up the full width */
+        margin-top: 10px;
+    }
+
+    .flex-container .content p {
+        margin-inline-start: 0%;
+        margin: 1.5%;
+        color: #bbb;
+        font-style: normal;
+        text-align: justify;
+        font-weight: 100;
+    }
+
+    .flex-container .actions, 
+    .flex-container .social-icons {
+        display: flex;
+        justify-content: center; /* Center the icons horizontally */
+        flex-direction: row;
+        margin-top: 10px;
+    }
+}
+
 .contact-container {
 	min-width:max-content;
 	
@@ -4576,19 +4621,26 @@ Method */
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 896px) {
     .contact-container {
         flex-direction: column;
     }
 
     .contact-info, .contact-form {
         flex: none;
-        width: 100%;
-        margin-right: 0;
+        width: 40%;
+        margin-right: 40px;
     }
 
     .contact-info {
         margin-bottom: 20px;
+		margin-left: 40px;
+		margin-right: 40px;
     }
+	.contact-form{
+		margin-bottom: 20px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
 }
 
